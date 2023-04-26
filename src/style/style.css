@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+
+}
+
+.App {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+}
+
+.test_body {
+    background-color: #272822;
+    padding: 25px;
+}
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: black;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    font-weight: 700;
+    color:lime;
+  }
+  .btn:hover {
+      text-decoration: none;
+      transition: all .8s;
+      font-weight: bolder;
+      border: 3px solid black;
+      color: black;
+      background-color: lime;
+  }
+  .btn:active {
+    background-color: lime;
+    border-radius: 15px;
+  }
+
+  .postCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1F1C;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+ 
+  .postCartTitle {
+    font-family:  futura;
+    color: lime;
+    font-size: 50px;
+  }
+  .postCartText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+  
+  .lime{
+    color: lime;
+  }
+
+  .margin_bottom{
+    margin-bottom: 200px;
+  }
