@@ -38,7 +38,7 @@
     text-transform: uppercase;
     font-family: Century Gothic;
     font-weight: 700;
-    color:lime;
+    color: aquamarine;
   }
   .btn:hover {
       text-decoration: none;
@@ -46,7 +46,7 @@
       font-weight: bolder;
       border: 3px solid black;
       color: black;
-      background-color: lime;
+      background-color: aquamarine;
   }
   .btn:active {
     background-color: lime;
@@ -81,4 +81,41 @@
 
   .margin_bottom{
     margin-bottom: 200px;
+  }
+
+  .todo_card{
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 500px;
+  }
+
+  .todo_wrap {
+    margin-bottom: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .input{
+    padding: 10px 15px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .todo_li{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .delete{
+    cursor: pointer;
+    color: red;
   }

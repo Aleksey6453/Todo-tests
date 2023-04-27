@@ -4,9 +4,12 @@ import Kabzda from './components/Kabzda';
 import Kabzda_two from './components/Kabzda_two';
 import Post_list from './components/Post_list';
 import PostForm from './components/PostForm';
-import TodoMain from './components/todo/TodoMain';
+import Todo from './components/todo/Todo';
+
 
 function App() {
+
+
   const [posts, setPosts] = useState([
     {id: 1, title: "JavaScripkaOleg", text: 'Description'},
     {id: 2, title: "JavaScriptonit", text: 'Description'},
@@ -22,7 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      <TodoMain />
+
+      <Todo />
+      
       <PostForm create={createPost} />
       {posts.length !== 0
         ? <Post_list del = {delPost} posts={posts} title={'List of posts 1'} />
