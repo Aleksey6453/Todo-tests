@@ -119,3 +119,7 @@
     cursor: pointer;
     color: red;
   }
+  input:checked + span{
+    text-decoration: line-through;
+  }
+
