@@ -30,9 +30,7 @@
     display: flex;
     align-self: center;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1;
-    padding: 1.2em 2.8em;
+    padding: 15px 40px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -88,7 +86,6 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
     width: 500px;
   }
 
@@ -113,12 +110,13 @@
   .todo_li{
     display: flex;
     justify-content: space-between;
-    
+     margin: 20px;
   }
   .delete{
     cursor: pointer;
     color: red;
   }
+
   input:checked + span{
     text-decoration: line-through;
   }
