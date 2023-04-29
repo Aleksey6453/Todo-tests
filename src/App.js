@@ -4,7 +4,8 @@ import Kabzda from './components/Kabzda';
 import Kabzda_two from './components/Kabzda_two';
 import Post_list from './components/Post_list';
 import PostForm from './components/PostForm';
-import Todo from './components/todo/Todo';
+import TodoApp from './components/todo/TodoApp';
+
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   return (
     <div className="App">
 
-      <Todo />
+      <TodoApp />
       
       <PostForm create={createPost} />
       {posts.length !== 0
