@@ -5,6 +5,11 @@ import Kabzda_two from './components/Kabzda_two';
 import Post_list from './components/Post_list';
 import PostForm from './components/PostForm';
 import TodoApp from './components/todo/TodoApp';
+import HooksApp from './components/hooksTest/HooksApp';
+import HooksAppEffect from './components/hooksTest/HooksAppEffect';
+import HooksAppRef from './components/hooksTest/HooksAppRef';
+
+import {AppToDo} from './components/newToDo/AppToDo'
 
 
 
@@ -26,6 +31,11 @@ function App() {
 
   return (
     <div className="App">
+      <AppToDo />
+
+      <HooksAppRef />
+      <HooksAppEffect />
+      <HooksApp />
 
       <TodoApp />
       
