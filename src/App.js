@@ -5,6 +5,7 @@ import Kabzda_two from './components/Kabzda_two';
 import Post_list from './components/Post_list';
 import PostForm from './components/PostForm';
 import TodoApp from './components/todo/TodoApp';
+import { NewApp } from './components/NewToDo/NewApp';
 
 
 
@@ -26,6 +27,8 @@ function App() {
 
   return (
     <div className="App">
+
+      <NewApp />
 
       <TodoApp />
       
