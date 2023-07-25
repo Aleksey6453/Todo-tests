@@ -16,13 +16,25 @@ const NewApp = () => {
            setValue('')
            }
         }
+     
+    const funcDelTodo = (id) => {
+      setTodos(todos.filter(todo => todo.id !== id))
+    }  
+    
+    const funcToggleTodo = () => {
+
+    }
 
         
   return (
     <div className='todo_wrap'>
       <h1>New App</h1>
-      <NewForm value={value} setValue={setValue} funcAdd={funcAdd} />
-      <NewTodoList items = {todos} />
+      <NewForm  value={value} 
+                setValue={setValue} 
+                funcAdd={funcAdd} />
+      <NewTodoList items = {todos} 
+                   funcDelTodo={funcDelTodo} 
+                   funcToggleTodo={funcToggleTodo} />
     </div>
   )
 }

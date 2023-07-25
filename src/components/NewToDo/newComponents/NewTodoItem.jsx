@@ -1,12 +1,12 @@
 import React from 'react'
 
-const NewTodoItem = ({id, title, complete}) => {
+const NewTodoItem = ({id, title, complete, funcDelTodo, funcToggleTodo}) => {
     // const {id, title, complete} = props
   return (
     <div className='gorizont2'>
-      <input type="checkbox" checked={complete} />
+      <input type="checkbox" checked={complete} onChange={() => {funcToggleTodo(id)}} />
       {title}
-      <button className='btn'>x</button>
+      <button className='btn' onClick={() => {funcDelTodo(id)}}>x</button>
     </div>
   )
 }
