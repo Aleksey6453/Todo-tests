@@ -18,7 +18,11 @@ const NewApp = () => {
         }
      
     const funcDelTodo = (id) => {
-      setTodos(todos.filter(todo => todo.id !== id))
+      // setTodos(todos.filter(todo => todo.id !== id))
+
+      const updateTodosArr = [... todos]
+      updateTodosArr.splice(id, 1)
+      setTodos(updateTodosArr)
     }  
     
     const funcToggleTodo = () => {
