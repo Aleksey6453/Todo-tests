@@ -6,7 +6,7 @@ const NewTodoItem = ({id, title, complete, funcDelTodo, funcToggleTodo}) => {
     <div className='gorizont2'>
       <input type="checkbox" checked={complete} onChange={() => {funcToggleTodo(id)}} />
       {title}
-      <button className='btn' onClick={() => {funcDelTodo(id)}}>x</button>
+      <button className='btn' onClick={() => {funcDelTodo(id)}}>Del</button>
     </div>
   )
 }

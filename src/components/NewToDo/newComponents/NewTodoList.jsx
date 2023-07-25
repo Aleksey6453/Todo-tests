@@ -5,7 +5,7 @@ const NewTodoList = ({funcDelTodo, funcToggleTodo, items}) => {
   return (
     <div className='list'>
       {
-        items.map(todo => <NewTodoItem key={todo.id} 
+        items.map((todo) => <NewTodoItem key={todo.id} 
                                         funcToggleTodo={funcToggleTodo}
                                         funcDelTodo={funcDelTodo}  
                                         {...todo} />)

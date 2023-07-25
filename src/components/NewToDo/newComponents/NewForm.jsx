@@ -6,7 +6,7 @@ const NewForm = ({value, setValue, funcAdd}) => {
 
     React.useEffect(() => {
       if (inputRef.current)  inputRef.current.focus()
-    }, [setValue])
+    })
 
     const handleKeyDown = (e) => {
       if (e.key === 'Enter')  funcAdd()

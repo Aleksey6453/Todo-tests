@@ -9,7 +9,7 @@ const NewApp = () => {
     const funcAdd = () => {
         if (value){
            setTodos([...todos,{
-            id:Date.now,
+            id: Date.now(),
             title: value,
             comlete: false
            }])
@@ -18,15 +18,21 @@ const NewApp = () => {
         }
      
     const funcDelTodo = (id) => {
-      // setTodos(todos.filter(todo => todo.id !== id))
+      setTodos(todos.filter(todo => todo.id !== id))
 
-      const updateTodosArr = [... todos]
-      updateTodosArr.splice(id, 1)
-      setTodos(updateTodosArr)
     }  
     
-    const funcToggleTodo = () => {
+    const funcToggleTodo = (id) => {
+      setTodos(todos.map(todo=>{
+        if (todo.id !== id) return todo;
 
+        console.log(todo.id)
+
+        return {
+          ...todo,
+          comlete: !todo.comlete
+        }
+      }))
     }
 
         
